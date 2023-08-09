@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for aya</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c58f98;
+  }
+  .card-container {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: #dabfd3;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .card-content {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .card-container.open {
+    transform: scale(1.05);
+  }
+  .card-container.open .card-content {
+    display: block;
+    opacity: 1;
+  }
+</style>
+<script>
+  function toggleCard(cardContainer) {
+    cardContainer.classList.toggle("open");
+  }
+</script>
+</head>
+<body>
+  <div class="card-container" onclick="toggleCard(this)">
+    <h2>i love aya</h2>
+    <div class="card-content">
+      <p>i just wanted to take a moment to let you know how much you mean to me. your presence in my life brings so much joy and positivity. i appreciate all the moments we've shared together and the deep connection we've built.
+
+        i want you to always feel secure and loved in our relationship. i'm here to support you through thick and thin, to listen to your thoughts, and to share in your dreams. whenever you have doubts or worries, remember that i'm here to reassure you and remind you of the strong bond we share.
+        
+        you are truly special to me, and i'm committed to nurturing our relationship and making it stronger every day. let's continue to communicate openly, grow together, and create beautiful memories.
+        
+        sending you all my love and a big hug.</p>
+    </div>
+  </div>
+</body>
+</html>
